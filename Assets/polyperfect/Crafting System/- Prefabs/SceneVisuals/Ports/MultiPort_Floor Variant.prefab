@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &22775480330499879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3969052320424355227, guid: 29647078e0d55bf40a1fdffdea390f34,
+        type: 3}
+      propertyPath: type
+      value: 
+      objectReference: {fileID: 11400000, guid: 83d99f64a3093234bbe876fc1ef8b8d0,
+        type: 2}
+    - target: {fileID: 5816800282585731618, guid: 29647078e0d55bf40a1fdffdea390f34,
+        type: 3}
+      propertyPath: m_Name
+      value: MultiPort_Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239422004758262609, guid: 29647078e0d55bf40a1fdffdea390f34,
+        type: 3}
+      propertyPath: type
+      value: 
+      objectReference: {fileID: 11400000, guid: 283387229596f2049aa418d5f46e941e,
+        type: 2}
+    - target: {fileID: 8634352632566079954, guid: 29647078e0d55bf40a1fdffdea390f34,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634352632566079954, guid: 29647078e0d55bf40a1fdffdea390f34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634352632566079954, guid: 29647078e0d55bf40a1fdffdea390f34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634352632566079954, guid: 29647078e0d55bf40a1fdffdea390f34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 29647078e0d55bf40a1fdffdea390f34, type: 3}

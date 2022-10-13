@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5384578978017612466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2902259421203015266}
+  - component: {fileID: 1340906121744713952}
+  - component: {fileID: 2316299371681425398}
+  m_Layer: 0
+  m_Name: Furniture Lounge Chair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2902259421203015266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5384578978017612466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 114639412034770808}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1340906121744713952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5384578978017612466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6576b638fdd0e546ac6c176d649d3f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 19
+  Icon: {fileID: 21300000, guid: a7daedcf2861a334f8ea1ac03c4f4d84, type: 3}
+  Name: Lounge Chair
+  Description: 
+  Category: Furniture
+  IsEditable: 1
+  IsDestructible: 1
+  RequireSocket: 0
+  IgnoreSocket: 0
+  KeepToHeight: 0
+  KeepHeight: 0
+  UseGroundUpper: 0
+  GroundUpperHeight: 1
+  RotateOnSockets: 1
+  RotateAccordingSlope: 0
+  RotationAxis: {x: 0, y: 90, z: 0}
+  PreviewClampPosition: 0
+  PreviewClampMinPosition: {x: 0, y: 0, z: 0}
+  PreviewClampMaxPosition: {x: 0, y: 0, z: 0}
+  PreviewOffset: {x: 0, y: 0, z: 0}
+  PreviewDisableObjects: []
+  PreviewDisableBehaviours: []
+  PreviewDisableColliders: []
+  PreviewUseColorLerpTime: 0
+  PreviewColorLerpTime: 15
+  UseCustomPreviewMaterial: 0
+  CustomPreviewMaterial: {fileID: 0}
+  PreviewAllowedColor: {r: 0, g: 1, b: 0, a: 0.5}
+  PreviewDeniedColor: {r: 1, g: 0, b: 0, a: 0.5}
+  Conditions: []
+  Appearances: []
+  AppearanceIndex: 0
+  MeshBounds:
+    m_Center: {x: 0.0020000339, y: 0.69, z: 0.004999995}
+    m_Extent: {x: 0.735, y: 0.69, z: 0.615}
+  CurrentState: 4
+  Sockets: []
+  LinkedPieces: []
+  Colliders: []
+  Renderers: []
+  ExtraProperties: []
+--- !u!114 &2316299371681425398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5384578978017612466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d21efe2c28e8754cabe8a64ef5578ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  CollisionClippingTolerance: 1
+  CollisionClippingSnappingTolerance: 0.99
+  CollisionIgnoreCategory: []
+  RequireBuildableSurface: 0
+  CollisionIgnoreWhenSnap: 0
+--- !u!1001 &440788221860442259
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2902259421203015266}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e33e704c9d07fa4baf10365a93e8509,
+        type: 3}
+      propertyPath: m_Name
+      value: loungeChair
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e33e704c9d07fa4baf10365a93e8509, type: 3}
+--- !u!4 &114639412034770808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5e33e704c9d07fa4baf10365a93e8509,
+    type: 3}
+  m_PrefabInstance: {fileID: 440788221860442259}
+  m_PrefabAsset: {fileID: 0}

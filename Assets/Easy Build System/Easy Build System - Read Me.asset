@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fcb0528820550499d051030855ca6d, type: 3}
+  m_Name: Easy Build System - Read Me
+  m_EditorClassIdentifier: 
+  Sections:
+  - Title: Easy Build System - Release 5.6.1
+    Description: Thank you to have purchasing Easy Build System and use it!\nYou
+      can read the last release note to know all the changes made on this release.
+    Links:
+    - Link: Release Note
+      Url: https://adsstudio12.gitbook.io/easybuildsystem/annex/release-notes
+  - Title: Documentation
+    Description: 'First time are you using Easy Build System? Read the Getting Started
+      guide!\nA complete documentation is available to know everything about the
+      system.\nTutorials are also available on the documentation to show you how
+      to use the system. '
+    Links:
+    - Link: Getting Started
+      Url: https://adsstudio12.gitbook.io/easybuildsystem/getting-started/
+    - Link: Documentation
+      Url: https://adsstudio12.gitbook.io/easybuildsystem/
+    - Link: Tutorials
+      Url: https://adsstudio12.gitbook.io/easybuildsystem/tutorials
+  - Title: Support
+    Description: If you have any questions or concerns about system, thank you for
+      contacting us!
+    Links:
+    - Link: Contact Support
+      Url: https://eu.jotform.com/form/202960719544359
+  - Title: 
+    Description: "<size=10><color=grey>Copyright \xA9 2015-2021 by Ads Studio 12.
+      All right reserved.</color></size>"
+    Links: []

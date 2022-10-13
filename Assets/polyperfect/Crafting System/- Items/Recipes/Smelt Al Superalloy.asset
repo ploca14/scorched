@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdb7c47cc1e48c0ad335b00d542e0ca, type: 3}
+  m_Name: Smelt Al Superalloy
+  m_EditorClassIdentifier: 
+  id:
+    val: 1248989600523960635
+  requirements:
+    items:
+    - item: {fileID: 11400000, guid: e49f3b56e0b74c049b4b862ff0ff61e1, type: 2}
+      count: 3
+    - item: {fileID: 11400000, guid: 6ada85f83112c1d439f67596bcd1d112, type: 2}
+      count: 1
+  results:
+    items:
+    - item: {fileID: 11400000, guid: 667e575ec451abd41a271276e19ac1cb, type: 2}
+      count: 1

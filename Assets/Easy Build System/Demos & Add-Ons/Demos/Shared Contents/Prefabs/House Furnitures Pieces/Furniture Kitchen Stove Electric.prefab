@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8567479274678797282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7568621004125953294}
+  - component: {fileID: 3326351557652847210}
+  - component: {fileID: 1932568299198847812}
+  m_Layer: 0
+  m_Name: Furniture Kitchen Stove Electric
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7568621004125953294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567479274678797282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3748215688281124007}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3326351557652847210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567479274678797282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6576b638fdd0e546ac6c176d649d3f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 15
+  Icon: {fileID: 21300000, guid: ff2794c873e6a4945bab44ef6999d240, type: 3}
+  Name: Kitchen Stove Electric
+  Description: 
+  Category: Furniture
+  IsEditable: 1
+  IsDestructible: 1
+  RequireSocket: 0
+  IgnoreSocket: 0
+  KeepToHeight: 0
+  KeepHeight: 0
+  UseGroundUpper: 0
+  GroundUpperHeight: 1
+  RotateOnSockets: 1
+  RotateAccordingSlope: 0
+  RotationAxis: {x: 0, y: 90, z: 0}
+  PreviewClampPosition: 0
+  PreviewClampMinPosition: {x: 0, y: 0, z: 0}
+  PreviewClampMaxPosition: {x: 0, y: 0, z: 0}
+  PreviewOffset: {x: 0, y: 0, z: 0}
+  PreviewDisableObjects: []
+  PreviewDisableBehaviours: []
+  PreviewDisableColliders: []
+  PreviewUseColorLerpTime: 0
+  PreviewColorLerpTime: 15
+  UseCustomPreviewMaterial: 0
+  CustomPreviewMaterial: {fileID: 0}
+  PreviewAllowedColor: {r: 0, g: 1, b: 0, a: 0.5}
+  PreviewDeniedColor: {r: 1, g: 0, b: 0, a: 0.5}
+  Conditions: []
+  Appearances: []
+  AppearanceIndex: 0
+  MeshBounds:
+    m_Center: {x: 0.005000055, y: 0.675, z: 0}
+    m_Extent: {x: 0.64500004, y: 0.675, z: 0.675}
+  CurrentState: 4
+  Sockets: []
+  LinkedPieces: []
+  Colliders: []
+  Renderers: []
+  ExtraProperties: []
+--- !u!114 &1932568299198847812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567479274678797282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d21efe2c28e8754cabe8a64ef5578ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  CollisionClippingTolerance: 1
+  CollisionClippingSnappingTolerance: 0.99
+  CollisionIgnoreCategory: []
+  RequireBuildableSurface: 0
+  CollisionIgnoreWhenSnap: 0
+--- !u!1001 &3715169741715245900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7568621004125953294}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.675
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14eac5a1a07fd904d86624e084fe66fe,
+        type: 3}
+      propertyPath: m_Name
+      value: kitchenStoveElectric
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14eac5a1a07fd904d86624e084fe66fe, type: 3}
+--- !u!4 &3748215688281124007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14eac5a1a07fd904d86624e084fe66fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 3715169741715245900}
+  m_PrefabAsset: {fileID: 0}

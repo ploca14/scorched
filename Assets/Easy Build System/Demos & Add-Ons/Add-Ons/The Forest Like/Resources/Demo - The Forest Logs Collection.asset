@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc11085a92c864a4e86dd419fed227d5, type: 3}
+  m_Name: Demo - The Forest Logs Collection
+  m_EditorClassIdentifier: 
+  Pieces:
+  - {fileID: 8477222944609242209, guid: 0cae7b14711a2e04bb1cbb5d383a478e, type: 3}
+  - {fileID: 592635047158155466, guid: d413d6d080df9c945ace6abadf344eaf, type: 3}
+  - {fileID: 7264853459237214344, guid: 2a8fe626e82f3214697c4b26ced4b93e, type: 3}
+  - {fileID: -7945508380665816788, guid: bcb41c063cc0102499e5cf7f5a958ed9, type: 3}
+  - {fileID: -6093457587730040955, guid: 137a8551ef8645b4d9a0ab7756f49bac, type: 3}
+  - {fileID: 6446998088823187932, guid: 67b738310e4a7934dbdb3524630e0a50, type: 3}
+  - {fileID: 8770602269925399149, guid: 4b59bb2cf9ed4d941a55f7379dab421d, type: 3}

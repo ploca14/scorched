@@ -1,0 +1,20 @@
+{
+    "name": "Polyperfect.Crafting.Editor",
+    "references": [
+        "Polyperfect.Crafting.Framework",
+        "Polyperfect.Common",
+        "Polyperfect.Common.Editor",
+        "Polyperfect.Crafting.Integration"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

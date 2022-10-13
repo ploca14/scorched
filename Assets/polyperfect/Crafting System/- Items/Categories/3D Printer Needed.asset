@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3336a0b8104e97bc5d2422989aa09d, type: 3}
+  m_Name: 3D Printer Needed
+  m_EditorClassIdentifier: 
+  id:
+    val: -6256668972807224040
+  members:
+  - {fileID: 11400000, guid: 84773987625bf9844836ddc52f7130b2, type: 2}
+  - {fileID: 11400000, guid: efcb0d0a34916894e970dc7326456dff, type: 2}
+  - {fileID: 11400000, guid: 70c29d6f8c7161a4ab0a7419f113edee, type: 2}
+  - {fileID: 11400000, guid: a4be1b48fda12334e984c12fd5126d47, type: 2}
+  - {fileID: 11400000, guid: 0375dd15e7dbf57478d13cc8c27ecb0f, type: 2}
+  - {fileID: 11400000, guid: a07a1866183a1cb4582d4b1a0bc4149b, type: 2}
+  - {fileID: 11400000, guid: 4e57bab437fb02f4d9c0e23b24cd3fe8, type: 2}
+  - {fileID: 11400000, guid: 72c1e2d4f4afb954f8d3a24ccbd4d57a, type: 2}
+  - {fileID: 11400000, guid: fab8837a3172e6a48b9b6ffc6a7ae6aa, type: 2}
+  - {fileID: 11400000, guid: f3b0453adc1d62e439875842e6be8088, type: 2}

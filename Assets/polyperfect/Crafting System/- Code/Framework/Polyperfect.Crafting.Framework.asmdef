@@ -1,0 +1,15 @@
+{
+    "name": "Polyperfect.Crafting.Framework",
+    "references": [
+        "Polyperfect.Common"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

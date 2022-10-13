@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &85735169085723494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2144711316572040639}
+  - component: {fileID: 5728876380997444546}
+  - component: {fileID: 3667285872690144868}
+  m_Layer: 0
+  m_Name: EnergyStore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2144711316572040639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85735169085723494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1138570937876826988}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5728876380997444546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85735169085723494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d3969a1fb14205b0eb63f693ebe028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+  instancesOnly: 0
+  MaximumCapacity:
+    Value: 10
+  InitialObject:
+    item: {fileID: 0}
+    count: 1
+  MemberRequirement: {fileID: 11400000, guid: f48a62d894635d241a4b489479ed3567, type: 2}
+  CapacitySource: {fileID: 0}
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3667285872690144868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85735169085723494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7dcc4a9907646c092953edb60d980ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CreationInterval: 0.5
+  Generated:
+    item: {fileID: 11400000, guid: 827b156a8cbcb6b40a27844c6b5f73dd, type: 2}
+    count: 5
+--- !u!1 &1138570937407966136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1138570937407966139}
+  - component: {fileID: 1138570937407966138}
+  - component: {fileID: 6408869474131132746}
+  m_Layer: 0
+  m_Name: BatteryPort
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1138570937407966139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138570937407966136}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 0, y: 1.657, z: -0.876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1138570937876826988}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &1138570937407966138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138570937407966136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fcaa2e2259746419a8b9107f07f3bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+  type: {fileID: 11400000, guid: bcec36557cd761f4b84cd308527eefdb, type: 2}
+--- !u!114 &6408869474131132746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138570937407966136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae79ca0cb34945c8bf64636079b5af0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExtractFrom: {fileID: 5728876380997444546}
+  TransferAmount: 999
+  TransferInterval: 0.5
+  ErrorOnNonTransferableConnected: 1
+  TransferEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSourceEmpty:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDestinationFull:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1138570937407966138}
+        m_MethodName: DisconnectPort
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1138570937876826989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1138570937876826988}
+  m_Layer: 0
+  m_Name: PlacedSolarPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1138570937876826988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138570937876826989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.52856636, y: 0.035, z: -17.069483}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6840449029990473883}
+  - {fileID: 1138570937407966139}
+  - {fileID: 2144711316572040639}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1138570938110497458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1138570937876826988}
+    m_Modifications:
+    - target: {fileID: 4647161907210726047, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514734720942074003, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+        type: 3}
+      propertyPath: m_Name
+      value: solar-panel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 12e132b9b1ed4c848b03bfd78d8b817e, type: 3}
+--- !u!4 &6840449029990473883 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5846565235012907561, guid: 12e132b9b1ed4c848b03bfd78d8b817e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1138570938110497458}
+  m_PrefabAsset: {fileID: 0}

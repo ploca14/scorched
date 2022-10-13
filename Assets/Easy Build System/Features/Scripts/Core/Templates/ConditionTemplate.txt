@@ -1,0 +1,28 @@
+﻿using UnityEngine;
+using EasyBuildSystem.Features.Scripts.Core.Base.Condition;
+using EasyBuildSystem.Features.Scripts.Core.Base.Condition.Enums;
+
+namespace EasyBuildSystem.Features.Scripts.Core.Templates
+{
+	//Do not forget to set a ConditionTarget to a component in attribute.
+	[Condition("name", "description", ConditionTarget.None)]
+	public class #SCRIPTNAME# : ConditionBehaviour
+	{
+		//Write your condition here.
+
+		/// <summary>
+        /// Called before the placement of the piece.
+        /// </summary>
+		public override bool CheckForPlacement() { return true; }
+
+		/// <summary>
+        /// Called before the destruction of the piece.
+        /// </summary>
+		public override bool CheckForDestruction() { return true; }
+
+		/// <summary>
+        /// Called before the edition of the piece.
+        /// </summary>
+		public override bool CheckForEdition() { return true; }
+	}
+}

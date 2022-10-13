@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdb7c47cc1e48c0ad335b00d542e0ca, type: 3}
+  m_Name: Print Smelter
+  m_EditorClassIdentifier: 
+  id:
+    val: -7402656368324939377
+  requirements:
+    items:
+    - item: {fileID: 11400000, guid: c942208433bccaf49acc1b6bd4d3a256, type: 2}
+      count: 4
+    - item: {fileID: 11400000, guid: e4be4a418db3a834d952ce3eccc622cc, type: 2}
+      count: 1
+  results:
+    items:
+    - item: {fileID: 11400000, guid: 48bb55756fab481469ceb7e4f4e2ac57, type: 2}
+      count: 1

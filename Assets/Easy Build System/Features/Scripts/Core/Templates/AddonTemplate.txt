@@ -1,0 +1,13 @@
+﻿using UnityEngine;
+using EasyBuildSystem.Features.Scripts.Core.Addons;
+using EasyBuildSystem.Features.Scripts.Core.Addons.Enums;
+
+namespace EasyBuildSystem.Features.Scripts.Core.Templates
+{
+	//Do not forget to set a AddOnTarget to a component in attribute.
+	[Addon("name", "description", AddonTarget.None)]
+	public class #SCRIPTNAME# : AddonBehaviour
+	{
+		//Write your addon here.
+	}
+}

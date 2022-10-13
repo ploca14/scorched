@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc11085a92c864a4e86dd419fed227d5, type: 3}
+  m_Name: Demo - Modular Building Pieces
+  m_EditorClassIdentifier: 
+  Pieces:
+  - {fileID: 5917770917921359765, guid: 3a3e4c391835e6a46b3e49372f4beb34, type: 3}
+  - {fileID: 3550027613961505305, guid: f1facfccd5235664b882c9938c0cef11, type: 3}
+  - {fileID: 6876717190554293640, guid: fb2321db72c51344683e159e8d7a8090, type: 3}
+  - {fileID: 6471946864795697495, guid: 5130b8e241010ba49b0287dd67369809, type: 3}
+  - {fileID: 4351822252310186049, guid: 69b72bcefafc3174b950f40a8f43d76b, type: 3}
+  - {fileID: 4655047922861027894, guid: a97a6bb0f4189864baccdf499101ba79, type: 3}

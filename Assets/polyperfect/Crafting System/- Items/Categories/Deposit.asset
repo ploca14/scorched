@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864db0bb7643489496af52762d9db253, type: 3}
+  m_Name: Deposit
+  m_EditorClassIdentifier: 
+  id:
+    val: 5704428459684325831
+  members:
+  - {fileID: 11400000, guid: 301d9137d1116e54cb6a9ac7ea845ffb, type: 2}
+  - {fileID: 11400000, guid: 9e4352ed386e7cc4d9322db8d7c7f144, type: 2}
+  - {fileID: 11400000, guid: cb696bf4cd923404f8849131aeb57a21, type: 2}
+  - {fileID: 11400000, guid: 729f935a4a43f7444a04fcd994a4379f, type: 2}
+  - {fileID: 11400000, guid: 01a50d2a70906bc4a9bcb4c923e4d259, type: 2}
