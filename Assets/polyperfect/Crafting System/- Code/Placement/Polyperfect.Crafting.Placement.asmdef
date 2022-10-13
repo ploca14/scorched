@@ -1,0 +1,16 @@
+{
+    "name": "Polyperfect.Crafting.Placement",
+    "references": [
+        "Polyperfect.Common",
+        "Polyperfect.Crafting.Framework"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

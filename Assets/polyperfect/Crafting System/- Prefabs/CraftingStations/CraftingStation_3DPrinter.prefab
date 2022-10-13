@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3537842777746839689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 946739873590603416, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_Name
+      value: SimpleCraftingStation_3DPrinter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472957648244105965, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6248cb7176e6e814bb27856ba375480d,
+        type: 3}
+    - target: {fileID: 3160096518100076640, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160096518100076640, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160096518100076640, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160096518100076640, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160096518100076640, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160096518100076640, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910072492392798425, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_Text
+      value: Because crafting things by hand is old-school
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947366887455278697, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947366887455278697, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947366887455278697, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947366887455278697, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960362154481778450, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_Text
+      value: 3D Printer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5659470102995436607, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_Text
+      value: Print
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969115154352352529, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969115154352352529, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969115154352352529, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969115154352352529, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969115154352352529, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985239880656886816, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_Text
+      value: 3D Printer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437046066025995805, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: MadeCategories.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437046066025995805, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: MadeCategories.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 688274063df49fe4691a8af6090eb3b0,
+        type: 2}
+    - target: {fileID: 9191063088959273841, guid: 27fc1cff94efdf9469106e7b55b2417f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27fc1cff94efdf9469106e7b55b2417f, type: 3}
+--- !u!4 &567220483194445536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3947366887455278697, guid: 27fc1cff94efdf9469106e7b55b2417f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3537842777746839689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4957148029939827206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567220483194445536}
+    m_Modifications:
+    - target: {fileID: 1519320365184622991, guid: 95d6763c23524b149a99650960c5abda,
+        type: 3}
+      propertyPath: m_Name
+      value: scifi-printer-3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188298061064239925, guid: 95d6763c23524b149a99650960c5abda,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188298061064239925, guid: 95d6763c23524b149a99650960c5abda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188298061064239925, guid: 95d6763c23524b149a99650960c5abda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188298061064239925, guid: 95d6763c23524b149a99650960c5abda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d6763c23524b149a99650960c5abda, type: 3}

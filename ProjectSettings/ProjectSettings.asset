@@ -598,7 +598,10 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Standalone: STARTER_ASSETS_PACKAGES_CHECKED
+    Android: EBS_NEW_INPUT_SYSTEM
+    Standalone: STARTER_ASSETS_PACKAGES_CHECKED;EBS_NEW_INPUT_SYSTEM
+    WebGL: EBS_NEW_INPUT_SYSTEM
+    iPhone: EBS_NEW_INPUT_SYSTEM
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

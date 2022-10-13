@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc11085a92c864a4e86dd419fed227d5, type: 3}
+  m_Name: Survival Like Add-On - Planks Pieces Collection
+  m_EditorClassIdentifier: 
+  Pieces:
+  - {fileID: 8294637330868243314, guid: faed053c16349964aafd013ce619b4a5, type: 3}
+  - {fileID: 3835279399765298654, guid: 5787717c0161c5a4aaeddf7c3ecbb565, type: 3}
+  - {fileID: 287657376118292889, guid: bf03c448edc9b4943b51c2536960bd4b, type: 3}
+  - {fileID: 7097461090547032112, guid: 667b8023b484ab849877423b8cc3f794, type: 3}
+  - {fileID: 5264643369448927780, guid: b5cfb8e0d1ea45344a503193318bb3eb, type: 3}
+  - {fileID: 6697255000036579137, guid: 50ebb3c550415024a8e68bc50a9ea3b1, type: 3}
+  - {fileID: 3958846324083120617, guid: a063823899e1f5f43b46a9e63eb1dc4f, type: 3}
+  - {fileID: 6977280028355371972, guid: d5ef7b88b893d4545b147ea626905996, type: 3}

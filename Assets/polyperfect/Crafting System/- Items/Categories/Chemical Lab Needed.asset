@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3336a0b8104e97bc5d2422989aa09d, type: 3}
+  m_Name: Chemical Lab Needed
+  m_EditorClassIdentifier: 
+  id:
+    val: 4803967937175249454
+  members:
+  - {fileID: 11400000, guid: b8b93f9036dcf5a4e83bed4da4fa1a2a, type: 2}
+  - {fileID: 11400000, guid: 48802b10a1c36fb4e8bb319c2bd6fa8d, type: 2}
+  - {fileID: 11400000, guid: efb650e2e46424644a7b483433e49767, type: 2}
