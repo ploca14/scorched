@@ -584,7 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHunger: 100
   _hungerDepletionRate: 1
-  _maxThirst: 100
+  _maxThirst: 75
   _thirstDepletionRate: 1
   _maxOxygen: 100
   _oxygenDepletionRate: 1
@@ -618,8 +618,9 @@ GameObject:
   - component: {fileID: 907614868}
   - component: {fileID: 907614867}
   - component: {fileID: 907614866}
+  - component: {fileID: 907614870}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,6 +711,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &907614870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907614865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d80d4427c8948909a3750105e0d190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _survivalManager: {fileID: 570904284}
+  _hungerMeter: {fileID: 224669800}
+  _thirstMeter: {fileID: 1183054236}
+  _oxygenMeter: {fileID: 1033071305}
+  _staminaMeter: {fileID: 1254331165}
 --- !u!1 &1033071303
 GameObject:
   m_ObjectHideFlags: 0
