@@ -20,6 +20,7 @@ namespace UnityTutorial.PlayerControl
         [SerializeField] private float AirResistance = 0.8f;
         private Rigidbody _playerRigidbody;
         private InputManager _inputManager;
+        private SurvivalManager _survivalManager;
         private Animator _animator;
         private bool _grounded = false;
         private bool _hasAnimator;
@@ -42,6 +43,7 @@ namespace UnityTutorial.PlayerControl
             _hasAnimator = TryGetComponent<Animator>(out _animator);
             _playerRigidbody = GetComponent<Rigidbody>();
             _inputManager = GetComponent<InputManager>();
+            _survivalManager = GetComponent<SurvivalManager>();
 
 
             _xVelHash = Animator.StringToHash("X_Velocity");
@@ -67,7 +69,7 @@ namespace UnityTutorial.PlayerControl
         {
             if(!_hasAnimator) return;
 
-            float targetSpeed = _inputManager.Run ? _runSpeed : _walkSpeed;
+            float targetSpeed = _inputManager.Run && _survivalManager.HasStamina() ? _runSpeed : _walkSpeed;
             if(_inputManager.Crouch) targetSpeed = 1.5f;
             if(_inputManager.Move ==Vector2.zero) targetSpeed = 0;
 
