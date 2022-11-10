@@ -7,18 +7,21 @@ public class SurvivalManager : MonoBehaviour
     [Header("Hunger")]
     [SerializeField] private float _maxHunger = 100f;
     [SerializeField] private float _hungerDepletionRate = 1f;
+    [SerializeField] private float _hungerDamageRate = 1f;
     private float _currentHunger;
     public float HungerPercent => _currentHunger / _maxHunger;
 
     [Header("Thirst")]
     [SerializeField] private float _maxThirst = 100f;
     [SerializeField] private float _thirstDepletionRate = 1f;
+    [SerializeField] private float _thirstDamageRate = 2f;
     private float _currentThirst;
     public float ThirstPercent => _currentThirst / _maxThirst;
 
     [Header("Oxygen")]
     [SerializeField] private float _maxOxygen = 100f;
     [SerializeField] private float _oxygenDepletionRate = 1f;
+    [SerializeField] private float _oxygenDamageRate = 5f;
     private float _currentOxygen;
     public float OxygenPercent => _currentOxygen / _maxOxygen;
 
@@ -32,6 +35,7 @@ public class SurvivalManager : MonoBehaviour
     public float StaminaPercent => _currentStamina / _maxStamina;
 
     private InputManager _inputManager;
+    private HealthManager _healthManager;
 
     public static UnityAction OnPlayerDied;
 
@@ -43,6 +47,7 @@ public class SurvivalManager : MonoBehaviour
         _currentStamina = _maxStamina;
 
         _inputManager = GetComponent<InputManager>();
+        _healthManager = GetComponent<HealthManager>();
     }
 
     private void Update()
@@ -51,16 +56,20 @@ public class SurvivalManager : MonoBehaviour
         _currentThirst -= _thirstDepletionRate * Time.deltaTime;
         _currentOxygen -= _oxygenDepletionRate * Time.deltaTime;
 
-        if (_currentHunger <= 0 || _currentThirst <= 0 || _currentOxygen <= 0)
-        {
-            OnPlayerDied?.Invoke();
-            _currentHunger = 0;
-            _currentThirst = 0;
-            _currentOxygen = 0;
-        }
-
+        HandleDamage(_currentHunger, _hungerDamageRate);
+        HandleDamage(_currentThirst, _thirstDamageRate);
+        HandleDamage(_currentOxygen, _oxygenDamageRate);
         HandleStaminaDepletion();
 
+    }
+
+    private void HandleDamage(float currentValue, float damageRate)
+    {
+        if (currentValue <= 0)
+        {
+            currentValue = 0;
+            _healthManager.DamagePlayer(damageRate);
+        }
     }
 
     private void HandleStaminaDepletion()
