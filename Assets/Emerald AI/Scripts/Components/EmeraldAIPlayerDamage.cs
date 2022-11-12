@@ -20,8 +20,10 @@ namespace EmeraldAI
 
         public void SendPlayerDamage(int DamageAmount, Transform Target, EmeraldAISystem EmeraldComponent, bool CriticalHit = false)
         {
+            DamagePlayerCustom(DamageAmount);
+
             //The standard damage function that sends damage to the Emerald AI demo player
-            DamagePlayerStandard(DamageAmount);
+            //DamagePlayerStandard(DamageAmount);
 
             //Creates damage text on the player's position, if enabled.
             CombatTextSystem.Instance.CreateCombatText(DamageAmount, transform.position, CriticalHit, false, true);
@@ -56,6 +58,16 @@ namespace EmeraldAI
                 }
             }
         }
+
+        void DamagePlayerCustom(int DamageAmount)
+        {
+            if (GetComponent<HealthManager>() != null)
+            {
+                HealthManager PlayerHealth = GetComponent<HealthManager>();
+                PlayerHealth.DamagePlayer(DamageAmount);
+            }
+        }
+
 
         #region Survival Template PRO
 #if SURVIVAL_TEMPLATE_PRO
