@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f01314a7104c50b88fcd6b8b5ff469, type: 3}
+  m_Name: Placement Vessel
+  m_EditorClassIdentifier: 
+  id:
+    val: 873761685871694745
+  members:
+  - {fileID: 11400000, guid: 28e62c4c594cf4e458029ac8a7ff5e9c, type: 2}
+  - {fileID: 11400000, guid: 9541c2e1e3f34654fa3c68ea7fb2b3d5, type: 2}
+  - {fileID: 11400000, guid: 364d8b30a526d44459127bae16db2618, type: 2}
+  - {fileID: 11400000, guid: 0108479c33daa83459852a40899ffcae, type: 2}
+  data:
+  - {fileID: 5655910111939194357, guid: 1c740f4dd8c7b2740ac4601889224540, type: 3}
+  - {fileID: 5655910111939194357, guid: 1c740f4dd8c7b2740ac4601889224540, type: 3}
+  - {fileID: 5655910111939194357, guid: 1c740f4dd8c7b2740ac4601889224540, type: 3}
+  - {fileID: 6580363605897685206, guid: 55bb82c5e088b16499a2ecb32709690c, type: 3}
