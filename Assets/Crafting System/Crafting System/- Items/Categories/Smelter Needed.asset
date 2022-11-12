@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Smelter Needed
   m_EditorClassIdentifier: 
   id:
-    val: 2162960833367094566
+    val: 5717485324612222399
   members:
   - {fileID: 11400000, guid: 1a1fa7a1686a9ea44999b1f973b0629d, type: 2}
   - {fileID: 11400000, guid: e0d28063b99529946a30692c1932f74b, type: 2}
