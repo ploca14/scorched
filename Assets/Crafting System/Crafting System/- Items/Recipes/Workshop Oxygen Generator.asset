@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workshop Oxygen Generator
   m_EditorClassIdentifier: 
   id:
-    val: -5833734153828634777
+    val: -351833708870886204
   requirements:
     items:
     - item: {fileID: 11400000, guid: 88d3f1487fc34834abf26c5f13df1ab0, type: 2}

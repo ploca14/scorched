@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Buggy
   m_EditorClassIdentifier: 
   id:
-    val: -6224721092193079595
+    val: 5995699346070234789
   requirements:
     items:
     - item: {fileID: 11400000, guid: 2225a850670cc3e479159aa1dc7334ea, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StackSize
   m_EditorClassIdentifier: 
   id:
-    val: -8312463732173946946
+    val: -2086373354343928892
   members:
   - {fileID: 11400000, guid: 993b22159fbf68c46a2b24c3ccee04a5, type: 2}
   - {fileID: 11400000, guid: e4be4a418db3a834d952ce3eccc622cc, type: 2}

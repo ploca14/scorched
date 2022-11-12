@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workshop Buggy Wheels
   m_EditorClassIdentifier: 
   id:
-    val: 2356098715766506241
+    val: 6530711327527621596
   requirements:
     items:
     - item: {fileID: 11400000, guid: 4b62399eded51804a922b10546b800d3, type: 2}

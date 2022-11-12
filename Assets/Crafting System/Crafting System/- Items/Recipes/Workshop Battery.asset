@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workshop Battery
   m_EditorClassIdentifier: 
   id:
-    val: 7452178909293875751
+    val: -3451297716062872004
   requirements:
     items:
     - item: {fileID: 11400000, guid: cfd2a21a118139949910d420c78312e8, type: 2}

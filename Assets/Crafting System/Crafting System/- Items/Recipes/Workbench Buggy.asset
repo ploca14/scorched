@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workbench Buggy
   m_EditorClassIdentifier: 
   id:
-    val: -3697637207356150224
+    val: -2258081900733874855
   requirements:
     list:
     - item: {fileID: 11400000, guid: 99425690e9c4bc540a3a5b1e0d5164a0, type: 2}

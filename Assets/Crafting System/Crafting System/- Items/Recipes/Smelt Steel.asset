@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Smelt Steel
   m_EditorClassIdentifier: 
   id:
-    val: 1317618307193191786
+    val: 5008293518747245704
   requirements:
     items:
     - item: {fileID: 11400000, guid: c942208433bccaf49acc1b6bd4d3a256, type: 2}

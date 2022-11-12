@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Smelt Chassis
   m_EditorClassIdentifier: 
   id:
-    val: -2416238656029453412
+    val: -6281434755738383419
   requirements:
     items:
     - item: {fileID: 11400000, guid: 667e575ec451abd41a271276e19ac1cb, type: 2}

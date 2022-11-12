@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workshop Robotic Arm
   m_EditorClassIdentifier: 
   id:
-    val: 3915173727203175038
+    val: -982816361952227204
   requirements:
     items:
     - item: {fileID: 11400000, guid: 852c379d26cbe8b4aa3cd66e35d71e62, type: 2}

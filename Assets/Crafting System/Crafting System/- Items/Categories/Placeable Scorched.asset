@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f01314a7104c50b88fcd6b8b5ff469, type: 3}
+  m_Name: Placeable Scorched
+  m_EditorClassIdentifier: 
+  id:
+    val: -8650921892218184106
+  members:
+  - {fileID: 11400000, guid: 993b22159fbf68c46a2b24c3ccee04a5, type: 2}
+  - {fileID: 11400000, guid: f1ca01f1848013c439dfb325af10d81b, type: 2}
+  - {fileID: 11400000, guid: ae849ede0ed1c974d840ae1cdf8aaf48, type: 2}
+  - {fileID: 11400000, guid: 48bb55756fab481469ceb7e4f4e2ac57, type: 2}
+  - {fileID: 11400000, guid: a60312a3499c8d647a7586d8dfc7350d, type: 2}
+  - {fileID: 11400000, guid: 683d910a66496c244b23a6f7dfa2a235, type: 2}
+  - {fileID: 11400000, guid: 881c8f68e1f387742bbd303b751ee50d, type: 2}
+  data:
+  - {fileID: 4340220605587060241, guid: 854a77564efdce04ba0389d23e8d48cd, type: 3}
+  - {fileID: 4340220605587060241, guid: 9c91bacf209d38345b98298f5826a04e, type: 3}
+  - {fileID: 4340220605587060241, guid: 57c86aaf1c7c2494ca14b2a64a0a8871, type: 3}
+  - {fileID: 4340220605587060241, guid: 4dfca2eaf68623847a97bfd59b094303, type: 3}
+  - {fileID: 1138570937876826989, guid: f4e7facfdebf97748aad0172252102ad, type: 3}
+  - {fileID: 5806514476869912711, guid: 93b1732614c495742a260eabd320f2d6, type: 3}
+  - {fileID: 7791077941645898804, guid: 49b08e8527131794abb27151d8ed6146, type: 3}
