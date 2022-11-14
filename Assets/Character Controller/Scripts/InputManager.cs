@@ -14,6 +14,7 @@ namespace UnityTutorial.Manager
         public bool Run {get; private set;}
         public bool Jump {get; private set;}
         public bool Crouch {get; private set;}
+        public bool Attack {get; private set;}
 
         private InputActionMap _currentMap;
         private InputAction _moveAction;
@@ -21,6 +22,7 @@ namespace UnityTutorial.Manager
         private InputAction _runAction;
         private InputAction _jumpAction;
         private InputAction _crouchAction;
+        private InputAction _attackAction;
 
         private void Awake() {
             HideCursor();
@@ -30,18 +32,21 @@ namespace UnityTutorial.Manager
             _runAction  = _currentMap.FindAction("Run");
             _jumpAction = _currentMap.FindAction("Jump");
             _crouchAction = _currentMap.FindAction("Crouch");
+            _attackAction = _currentMap.FindAction("Attack");
 
             _moveAction.performed += onMove;
             _lookAction.performed += onLook;
             _runAction.performed += onRun;
             _jumpAction.performed += onJump;
             _crouchAction.started += onCrouch;
+            _attackAction.performed += onAttack;
 
             _moveAction.canceled += onMove;
             _lookAction.canceled += onLook;
             _runAction.canceled += onRun;
             _jumpAction.canceled += onJump;
             _crouchAction.canceled += onCrouch;
+            _attackAction.canceled += onAttack;
         }
 
         private void HideCursor()
@@ -69,6 +74,10 @@ namespace UnityTutorial.Manager
         private void onCrouch(InputAction.CallbackContext context)
         {
             Crouch = context.ReadValueAsButton();
+        }
+        private void onAttack(InputAction.CallbackContext context)
+        {
+            Attack = context.ReadValueAsButton();
         }
 
         private void OnEnable() {
