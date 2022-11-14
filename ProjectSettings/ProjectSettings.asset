@@ -599,7 +599,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     Android: EBS_NEW_INPUT_SYSTEM
-    Standalone: STARTER_ASSETS_PACKAGES_CHECKED;EBS_NEW_INPUT_SYSTEM
+    Standalone: STARTER_ASSETS_PACKAGES_CHECKED;EBS_NEW_INPUT_SYSTEM;EMERALD_AI_PRESENT
     WebGL: EBS_NEW_INPUT_SYSTEM
     iPhone: EBS_NEW_INPUT_SYSTEM
   additionalCompilerArguments: {}

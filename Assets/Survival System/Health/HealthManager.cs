@@ -7,14 +7,14 @@ public class HealthManager : MonoBehaviour
 {
     [Header("Health")]
     [SerializeField] private float _maxHealth = 1000f;
-    private float _currentHealth;
-    public float HealthPercent => _currentHealth / _maxHealth;
+    public float CurrentHealth;
+    public float HealthPercent => CurrentHealth / _maxHealth;
 
     [SerializeField] private GameOverScreen _gameOverScreen;
 
     private void Start()
     {
-        _currentHealth = _maxHealth;
+        CurrentHealth = _maxHealth;
     }
 
     // Update is called once per frame
@@ -25,16 +25,16 @@ public class HealthManager : MonoBehaviour
 
     public void ReplenishHealth(float healthAmount)
     {
-        _currentHealth += healthAmount;
+        CurrentHealth += healthAmount;
 
-        if (_currentHealth > _maxHealth) _currentHealth = _maxHealth;
+        if (CurrentHealth > _maxHealth) CurrentHealth = _maxHealth;
     }
 
     public void DamagePlayer(float damageAmount)
     {
-        _currentHealth -= damageAmount;
+        CurrentHealth -= damageAmount;
 
-        if (_currentHealth <= 0)
+        if (CurrentHealth <= 0)
         {
             HandleGameOver();
         }

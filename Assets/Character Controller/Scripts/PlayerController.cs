@@ -3,14 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityTutorial.Manager;
+using EmeraldAI;
 
 namespace UnityTutorial.PlayerControl
 {
     public class PlayerController : MonoBehaviour
     {
+        public int DamageAmount = 5;
+        [SerializeField] private float RaycastDistance = 100;
         [SerializeField] private float AnimBlendSpeed = 8.9f;
         [SerializeField] private Transform CameraRoot;
-        [SerializeField] private Transform Camera;
+        [SerializeField] private Camera Camera;
         [SerializeField] private float UpperLimit = -40f;
         [SerializeField] private float BottomLimit = 70f;
         [SerializeField] private float MouseSensitivity = 21.9f;
@@ -31,6 +34,7 @@ namespace UnityTutorial.PlayerControl
         private int _fallingHash;
         private int _zVelHash;
         private int _crouchHash;
+        private int _attackHash;
         private float _xRotation;
 
         private const float _walkSpeed = 2f;
@@ -53,11 +57,13 @@ namespace UnityTutorial.PlayerControl
             _groundHash = Animator.StringToHash("Grounded");
             _fallingHash = Animator.StringToHash("Falling");
             _crouchHash = Animator.StringToHash("Crouch");
+            _attackHash = Animator.StringToHash("Attack");
         }
 
         private void FixedUpdate() {
             SampleGround();
             Move();
+            HandleAttack();
             HandleJump();
             HandleCrouch();
         }
@@ -100,13 +106,13 @@ namespace UnityTutorial.PlayerControl
 
             var Mouse_X = _inputManager.Look.x;
             var Mouse_Y = _inputManager.Look.y;
-            Camera.position = CameraRoot.position;
+            Camera.transform.position = CameraRoot.position;
             
             
             _xRotation -= Mouse_Y * MouseSensitivity * Time.smoothDeltaTime;
             _xRotation = Mathf.Clamp(_xRotation, UpperLimit, BottomLimit);
 
-            Camera.localRotation = Quaternion.Euler(_xRotation, 0 , 0);
+            Camera.transform.localRotation = Quaternion.Euler(_xRotation, 0 , 0);
             _playerRigidbody.MoveRotation(_playerRigidbody.rotation * Quaternion.Euler(0, Mouse_X * MouseSensitivity * Time.smoothDeltaTime, 0));
         }
 
@@ -121,17 +127,17 @@ namespace UnityTutorial.PlayerControl
             _animator.SetTrigger(_jumpHash);
 
             //Enable this if you want B-Hop
-            //_playerRigidbody.AddForce(-_playerRigidbody.velocity.y * Vector3.up, ForceMode.VelocityChange);
-            //_playerRigidbody.AddForce(Vector3.up * JumpFactor, ForceMode.Impulse);
-            //_animator.ResetTrigger(_jumpHash);
+            _playerRigidbody.AddForce(-_playerRigidbody.velocity.y * Vector3.up, ForceMode.VelocityChange);
+            _playerRigidbody.AddForce(Vector3.up * JumpFactor, ForceMode.Impulse);
+            _animator.ResetTrigger(_jumpHash);
         }
 
         public void JumpAddForce()
         {
             //Comment this out if you want B-Hop, otherwise the player will jump twice in the air
-            _playerRigidbody.AddForce(-_playerRigidbody.velocity.y * Vector3.up, ForceMode.VelocityChange);
-            _playerRigidbody.AddForce(Vector3.up * JumpFactor, ForceMode.Impulse);
-            _animator.ResetTrigger(_jumpHash);
+            // _playerRigidbody.AddForce(-_playerRigidbody.velocity.y * Vector3.up, ForceMode.VelocityChange);
+            // _playerRigidbody.AddForce(Vector3.up * JumpFactor, ForceMode.Impulse);
+            // _animator.ResetTrigger(_jumpHash);
         }
 
         private void SampleGround()
@@ -157,6 +163,42 @@ namespace UnityTutorial.PlayerControl
         {
             _animator.SetBool(_fallingHash, !_grounded);
             _animator.SetBool(_groundHash, _grounded);
+        }
+
+        private void HandleAttack()
+        {
+            if(!_hasAnimator) return;
+            if(!_inputManager.Attack) return;
+            _animator.SetTrigger(_attackHash);
+        }
+
+        private void DoDamage() {
+            Ray ray;
+            RaycastHit hit;
+            ray = Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+
+            Debug.DrawRay(ray.origin, ray.direction * RaycastDistance, Color.red);
+
+            if (Physics.Raycast(ray, out hit, RaycastDistance))
+            {
+                if (hit.collider.GetComponent<EmeraldAISystem>() != null)
+                {
+                    //Get a reference to the EmeraldAISystem script that is hit by the raycast.
+                    EmeraldAISystem EmeraldComponent = hit.collider.GetComponent<EmeraldAISystem>();
+
+                    if (EmeraldComponent.LocationBasedDamageComp == null)
+                    {
+                        EmeraldComponent.Damage(DamageAmount, EmeraldAISystem.TargetType.Player, transform, 400);
+                    }
+                }
+
+                if (hit.collider.GetComponent<LocationBasedDamageArea>())
+                {
+                    hit.collider.GetComponent<LocationBasedDamageArea>().DamageArea(DamageAmount, EmeraldAISystem.TargetType.Player, transform, 400);
+                }
+            }
+
+            _animator.ResetTrigger(_attackHash);
         }
     }
 }
