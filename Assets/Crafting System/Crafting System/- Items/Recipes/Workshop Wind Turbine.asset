@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workshop Wind Turbine
   m_EditorClassIdentifier: 
   id:
-    val: 2124130315123902459
+    val: -2085918397223485572
   requirements:
     items:
     - item: {fileID: 11400000, guid: 852c379d26cbe8b4aa3cd66e35d71e62, type: 2}

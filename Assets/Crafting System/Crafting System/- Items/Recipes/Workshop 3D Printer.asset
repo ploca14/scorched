@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workshop 3D Printer
   m_EditorClassIdentifier: 
   id:
-    val: 5033610089540309011
+    val: -3069446358636003591
   requirements:
     items:
     - item: {fileID: 11400000, guid: 4b62399eded51804a922b10546b800d3, type: 2}

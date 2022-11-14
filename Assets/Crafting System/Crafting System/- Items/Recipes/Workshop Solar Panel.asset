@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workshop Solar Panel
   m_EditorClassIdentifier: 
   id:
-    val: -3707728701793882975
+    val: -1946822520501169821
   requirements:
     items:
     - item: {fileID: 11400000, guid: 852c379d26cbe8b4aa3cd66e35d71e62, type: 2}

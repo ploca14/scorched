@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workshop Conductive Wire
   m_EditorClassIdentifier: 
   id:
-    val: -3362917723571902298
+    val: -8216579308674977165
   requirements:
     items:
     - item: {fileID: 11400000, guid: e49f3b56e0b74c049b4b862ff0ff61e1, type: 2}

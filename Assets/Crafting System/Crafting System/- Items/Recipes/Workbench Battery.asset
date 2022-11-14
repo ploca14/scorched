@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Workbench Battery
   m_EditorClassIdentifier: 
   id:
-    val: -4938054130968306764
+    val: 614658030552820784
   requirements:
     list:
     - item: {fileID: 11400000, guid: 15f3517aacd7a194da1eca43b236176c, type: 2}
