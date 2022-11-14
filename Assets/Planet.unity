@@ -1828,6 +1828,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6209690643744818836, guid: 57c86aaf1c7c2494ca14b2a64a0a8871,
+        type: 3}
+      propertyPath: MadeCategories.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: bf40c89a6a1ed40978e673e418c32023,
+        type: 2}
     - target: {fileID: 7191826222666134936, guid: 57c86aaf1c7c2494ca14b2a64a0a8871,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -18132,6 +18138,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TableCraftingStation_Workshop
       objectReference: {fileID: 0}
+    - target: {fileID: 2046810554651715823, guid: 1beae35909458e842b257320ab7c62fe,
+        type: 3}
+      propertyPath: CreatedCategories.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c590d67340bc476bb609dbf2e9d7082,
+        type: 2}
     - target: {fileID: 4041545564143917359, guid: 1beae35909458e842b257320ab7c62fe,
         type: 3}
       propertyPath: m_RootOrder
@@ -21864,6 +21876,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6209690643744818836, guid: 4dfca2eaf68623847a97bfd59b094303,
+        type: 3}
+      propertyPath: MadeCategories.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9f7d742f89be04620bc7df0d767bdcf8,
+        type: 2}
     - target: {fileID: 7191826222666134936, guid: 4dfca2eaf68623847a97bfd59b094303,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -30797,6 +30815,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6209690643744818836, guid: 9c91bacf209d38345b98298f5826a04e,
+        type: 3}
+      propertyPath: MadeCategories.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6d919d0799e0b417597156e6fcb55799,
+        type: 2}
     - target: {fileID: 6570589241407731198, guid: 9c91bacf209d38345b98298f5826a04e,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -43401,6 +43425,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6209690643744818836, guid: 854a77564efdce04ba0389d23e8d48cd,
+        type: 3}
+      propertyPath: MadeCategories.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: b2631cf82056e4f8eb6e1e55b1db44f2,
+        type: 2}
     - target: {fileID: 7191826222666134936, guid: 854a77564efdce04ba0389d23e8d48cd,
         type: 3}
       propertyPath: m_AnchorMax.y
