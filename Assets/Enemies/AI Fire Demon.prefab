@@ -5557,7 +5557,7 @@ MonoBehaviour:
   CurrentDamageAmount: 5
   DamageAmountRun: 5
   WanderRadius: 25
-  TabNumber: 1
+  TabNumber: 4
   TemperamentTabNumber: 2
   DetectionTagsTabNumber: 1
   AnimationTabNumber: 2
@@ -5812,7 +5812,8 @@ MonoBehaviour:
   RangedSheatheWeapon: {fileID: 0}
   RangedUnsheatheWeapon: {fileID: 0}
   IdleSounds: []
-  AttackSounds: []
+  AttackSounds:
+  - {fileID: 8300000, guid: 6d1d0609a9d0e0f4390da0f7615a7ca1, type: 3}
   InjuredSounds: []
   WarningSounds: []
   DeathSounds: []
