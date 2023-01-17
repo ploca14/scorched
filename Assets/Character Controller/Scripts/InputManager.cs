@@ -25,7 +25,6 @@ namespace UnityTutorial.Manager
         private InputAction _attackAction;
 
         private void Awake() {
-            HideCursor();
             _currentMap = PlayerInput.currentActionMap;
             _moveAction = _currentMap.FindAction("Move");
             _lookAction = _currentMap.FindAction("Look");
@@ -47,12 +46,6 @@ namespace UnityTutorial.Manager
             _jumpAction.canceled += onJump;
             _crouchAction.canceled += onCrouch;
             _attackAction.canceled += onAttack;
-        }
-
-        private void HideCursor()
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void onMove(InputAction.CallbackContext context)

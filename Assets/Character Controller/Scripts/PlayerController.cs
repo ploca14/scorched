@@ -36,6 +36,8 @@ namespace UnityTutorial.PlayerControl
         private int _crouchHash;
         private int _attackHash;
         private float _xRotation;
+        public bool IsInteracting {get; set;}
+
 
         private const float _walkSpeed = 2f;
         private const float _runSpeed = 6f;
@@ -74,6 +76,7 @@ namespace UnityTutorial.PlayerControl
         private void Move()
         {
             if(!_hasAnimator) return;
+            if(IsInteracting) return;
 
             float targetSpeed = _inputManager.Run && _survivalManager.HasStamina() ? _runSpeed : _walkSpeed;
             if(_inputManager.Crouch) targetSpeed = 1.5f;
@@ -103,6 +106,8 @@ namespace UnityTutorial.PlayerControl
         private void CamMovements()
         {
             if(!_hasAnimator) return;
+            if (Cursor.lockState != CursorLockMode.Locked)
+                return;
 
             var Mouse_X = _inputManager.Look.x;
             var Mouse_Y = _inputManager.Look.y;
@@ -124,6 +129,8 @@ namespace UnityTutorial.PlayerControl
             if(!_hasAnimator) return;
             if(!_inputManager.Jump) return;
             if(!_grounded) return;
+            if(IsInteracting) return;
+            
             _animator.SetTrigger(_jumpHash);
 
             //Enable this if you want B-Hop
@@ -169,6 +176,7 @@ namespace UnityTutorial.PlayerControl
         {
             if(!_hasAnimator) return;
             if(!_inputManager.Attack) return;
+            if(IsInteracting) return;
             _animator.SetTrigger(_attackHash);
         }
 
