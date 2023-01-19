@@ -26892,8 +26892,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ToInsert:
-  - item: {fileID: 11400000, guid: 364d8b30a526d44459127bae16db2618, type: 2}
-    count: 1
+  - item: {fileID: 0}
+    count: 0
   - item: {fileID: 11400000, guid: 729f935a4a43f7444a04fcd994a4379f, type: 2}
     count: 10
   - item: {fileID: 11400000, guid: cc1dc0d6b7c4f6e4a833fcfed685d363, type: 2}
@@ -26984,8 +26984,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultVessel: {fileID: 4174406281236525187, guid: a176215abaa4dd2459c510a0bd161df2,
     type: 3}
-  PlaceableData: {fileID: 11400000, guid: 59b4f47c3cf5ce848a15e8fc2d39d341, type: 2}
-  VesselData: {fileID: 11400000, guid: 7e7f83e470e576348b9bb5f49bac8336, type: 2}
+  PlaceableData: {fileID: 11400000, guid: 283815434f18642398e3bad9786508e9, type: 2}
+  VesselData: {fileID: 11400000, guid: 1e17ac93e1df2a024836cb45e540af62, type: 2}
   OnPlacementActivated:
     m_PersistentCalls:
       m_Calls: []
@@ -27038,7 +27038,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  PlaceableData: {fileID: 11400000, guid: 59b4f47c3cf5ce848a15e8fc2d39d341, type: 2}
+  PlaceableData: {fileID: 11400000, guid: 283815434f18642398e3bad9786508e9, type: 2}
   MouseLockButton: 0
   LockCursor: 1
 --- !u!114 &1166983126
