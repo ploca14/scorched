@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdb7c47cc1e48c0ad335b00d542e0ca, type: 3}
+  m_Name: Chem Carrot
+  m_EditorClassIdentifier: 
+  id:
+    val: 2330200217302738760
+  requirements:
+    items:
+    - item: {fileID: 11400000, guid: 88d3f1487fc34834abf26c5f13df1ab0, type: 2}
+      count: 1
+    - item: {fileID: 11400000, guid: 301d9137d1116e54cb6a9ac7ea845ffb, type: 2}
+      count: 1
+    - item: {fileID: 11400000, guid: 9e4352ed386e7cc4d9322db8d7c7f144, type: 2}
+      count: 1
+  results:
+    items:
+    - item: {fileID: 11400000, guid: 0d772d9d55eb5cf52a36172170bf3f2b, type: 2}
+      count: 1

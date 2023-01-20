@@ -16,4 +16,5 @@ MonoBehaviour:
     val: 8726708738184403566
   members:
   - {fileID: 11400000, guid: 9e4352ed386e7cc4d9322db8d7c7f144, type: 2}
-  data: 32000000
+  - {fileID: 11400000, guid: 0d772d9d55eb5cf52a36172170bf3f2b, type: 2}
+  data: 3200000032000000
