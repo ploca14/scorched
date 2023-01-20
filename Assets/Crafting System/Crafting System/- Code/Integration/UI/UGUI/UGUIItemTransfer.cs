@@ -1,9 +1,12 @@
 ﻿using System;
+using Codice.CM.Client.Differences;
 using Polyperfect.Common;
 using Polyperfect.Crafting.Framework;
+using UnityEditor.Graphs;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using static UnityEditor.Progress;
 
 namespace Polyperfect.Crafting.Integration.UGUI
 {
@@ -16,7 +19,12 @@ namespace Polyperfect.Crafting.Integration.UGUI
         public ItemSlotComponent Slot => _slot;
         public ItemStackEvent OnExtracted, OnInserted;
         public UnityEvent OnBeginHold, OnEndHold;
-
+        public static event Action<int> OnFoodConsumed = delegate { };
+        public static event Action<int> OnWaterConsumed = delegate { };
+        public static event Action<int> OnOxygenConsumed = delegate { };
+        public UnityEvent OnConsumeBegin, OnConsumeEnd;
+        public ItemStackEvent OnConsumed;
+        private Quantity ConsumeAmount = 1;
 
         public static void AssertInstanceExists()
         {
@@ -26,6 +34,7 @@ namespace Polyperfect.Crafting.Integration.UGUI
         
         public static UGUIItemTransfer Instance { get; private set; }
         bool isHolding;
+
         void Awake()
         {
             Instance = this;
@@ -46,10 +55,17 @@ namespace Polyperfect.Crafting.Integration.UGUI
             isHolding = currentlyHolding;
         }
 
-        public bool HandleSlotClick(GameObject caller, PointerEventData data)
+        public bool HandleSlotClick(
+            GameObject caller,
+            PointerEventData data,
+            CategoryWithInt waterCategory,
+            CategoryWithInt foodCategory,
+            CategoryWithInt oxygenCategory
+            )
         {
             var slot = _slot;
             var peek = slot.Peek();
+            
             if (peek.IsEmpty())
             {
                 var extractable = caller.GetComponent<IExtract<Quantity, ItemStack>>();
@@ -63,8 +79,8 @@ namespace Polyperfect.Crafting.Integration.UGUI
                             transferAmount = extractable.Peek().Value;
                             break;
                         case PointerEventData.InputButton.Right:
-                            transferAmount = Mathf.CeilToInt(extractable.Peek().Value / 2f);
-                            break;
+                            handleItemConsumption(extractable, waterCategory, foodCategory, oxygenCategory);
+                            return false;
                         default:
                             throw new ArgumentOutOfRangeException();
                     }
@@ -81,7 +97,6 @@ namespace Polyperfect.Crafting.Integration.UGUI
                 var insertable = caller.GetComponent<IInsert<ItemStack>>();
                 if (insertable != null)
                 {
-                    
                     var transferer = new SimpleStackTransfer<ItemStack>(slot, insertable);
                     switch (data.button)
                     {
@@ -105,13 +120,6 @@ namespace Polyperfect.Crafting.Integration.UGUI
                                 }
                             }
                             break;
-                        case PointerEventData.InputButton.Right:
-                        {
-                            var inserted = transferer.TransferPossible(1);
-                            if (inserted.Value > 0)
-                                OnInserted.Invoke(inserted);
-                            break;
-                        }
                         default:
                             throw new ArgumentOutOfRangeException();
                     }
@@ -119,6 +127,53 @@ namespace Polyperfect.Crafting.Integration.UGUI
             }
 
             return false;
+        }
+
+        private void handleItemConsumption(
+            IExtract<Quantity, ItemStack> item,
+            CategoryWithInt waterCategory,
+            CategoryWithInt foodCategory,
+            CategoryWithInt oxygenCategory)
+        {
+            IItemWorld world = ItemWorldReference.Instance.World;
+
+            Debug.Log(item.Peek().Value);
+
+            if (item.Peek().Value >= ConsumeAmount)
+            {
+                if (world.CategoryContains(waterCategory.ID, item.Peek().ID))
+                {
+                    Debug.Log("Is  water Consumable");
+                    if (world.GetReadOnlyAccessor<int>(waterCategory).TryGetValue(item.Peek().ID, out var waterAmount))
+                    {
+                        Debug.Log(waterAmount);
+                        OnWaterConsumed(waterAmount);
+                        item.ExtractAmount(1);
+                    }
+                }
+
+                if (world.CategoryContains(foodCategory.ID, item.Peek().ID))
+                {
+                    Debug.Log("Is food Consumable");
+                    if (world.GetReadOnlyAccessor<int>(foodCategory).TryGetValue(item.Peek().ID, out var foodAmount))
+                    {
+                        Debug.Log(foodAmount);
+                        OnFoodConsumed(foodAmount);
+                        item.ExtractAmount(1);
+                    }
+                }
+
+                if (world.CategoryContains(oxygenCategory.ID, item.Peek().ID))
+                {
+                    Debug.Log("Is oxygen Consumable");
+                    if (world.GetReadOnlyAccessor<int>(oxygenCategory).TryGetValue(item.Peek().ID, out var oxygenAmount))
+                    {
+                        Debug.Log(oxygenAmount);
+                        OnOxygenConsumed(oxygenAmount);
+                        item.ExtractAmount(1);
+                    }
+                }
+            }
         }
     }
 }
