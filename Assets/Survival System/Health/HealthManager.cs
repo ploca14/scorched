@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityTutorial.Manager;
 
 public class HealthManager : MonoBehaviour
@@ -9,6 +10,8 @@ public class HealthManager : MonoBehaviour
     [SerializeField] private float _maxHealth = 1000f;
     public float CurrentHealth;
     public float HealthPercent => CurrentHealth / _maxHealth;
+    private bool _isDead = false;
+    public UnityEvent onDeath;
 
     [SerializeField] private GameOverScreen _gameOverScreen;
 
@@ -32,16 +35,13 @@ public class HealthManager : MonoBehaviour
 
     public void DamagePlayer(float damageAmount)
     {
+        if (_isDead) return;
         CurrentHealth -= damageAmount;
 
         if (CurrentHealth <= 0)
         {
-            HandleGameOver();
+            _isDead = true;
+            onDeath.Invoke();
         }
-    }
-
-    private void HandleGameOver()
-    {
-        _gameOverScreen.Show();
     }
 }

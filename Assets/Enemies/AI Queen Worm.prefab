@@ -672,10 +672,10 @@ MonoBehaviour:
   CurrentDamageAmount: 5
   DamageAmountRun: 5
   WanderRadius: 25
-  TabNumber: 4
+  TabNumber: 6
   TemperamentTabNumber: 2
   DetectionTagsTabNumber: 0
-  AnimationTabNumber: 1
+  AnimationTabNumber: 2
   SoundTabNumber: 1
   MovementTabNumber: 1
   WeaponTypeTabNumber: 0
@@ -1095,7 +1095,7 @@ AudioSource:
   DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 50
-  Pan2D: 0
+  Pan2D: -0.02
   rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0

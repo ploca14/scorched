@@ -67,6 +67,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.056117117
+        functionName: QueenWormAttackSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 193776139555b044aa5be11359008c59,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

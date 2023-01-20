@@ -5022,6 +5022,7 @@ GameObject:
   - component: {fileID: 2756512090408423562}
   - component: {fileID: 2756512090408423560}
   - component: {fileID: 2756512090408423566}
+  - component: {fileID: -621334394088633354}
   m_Layer: 7
   m_Name: AI Fire Demon
   m_TagString: Enemy
@@ -5968,8 +5969,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 6d1d0609a9d0e0f4390da0f7615a7ca1, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -6136,6 +6137,18 @@ MonoBehaviour:
   DeathDelay: 0
   BoneObjects: 
   BoneTransformList: []
+--- !u!114 &-621334394088633354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756512090408423567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7f1c8104ccdca40a67af28a5a9c576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2756512090408423569
 GameObject:
   m_ObjectHideFlags: 0

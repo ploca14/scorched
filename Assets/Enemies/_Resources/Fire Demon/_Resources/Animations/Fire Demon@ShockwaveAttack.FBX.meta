@@ -526,6 +526,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0
+        functionName: FireDemonAttackSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 3a7f1c8104ccdca40a67af28a5a9c576,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
