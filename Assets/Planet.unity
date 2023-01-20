@@ -9064,7 +9064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -42078,7 +42078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -49908,6 +49908,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: CraftingStation_3DPrinter
       objectReference: {fileID: 0}
+    - target: {fileID: 6303268206719812694, guid: 854a77564efdce04ba0389d23e8d48cd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.1912004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303268206719812694, guid: 854a77564efdce04ba0389d23e8d48cd,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303268206719812694, guid: 854a77564efdce04ba0389d23e8d48cd,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303268206719812694, guid: 854a77564efdce04ba0389d23e8d48cd,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 854a77564efdce04ba0389d23e8d48cd, type: 3}
 --- !u!4 &1993140077 stripped
@@ -52812,7 +52832,7 @@ PrefabInstance:
       objectReference: {fileID: 1128147997}
     - target: {fileID: 570904292, guid: 7cddeb784cb136cfd8fec0492b7fc5c1, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 570904292, guid: 7cddeb784cb136cfd8fec0492b7fc5c1, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
