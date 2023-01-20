@@ -21,6 +21,10 @@ namespace Polyperfect.Crafting.Demo
             base.Update();
             Cursor.lockState = LockCursor ? CursorLockMode.Locked : CursorLockMode.None;
 
+            if (LockCursor) {
+                Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            }
+
             if (Input.GetKeyDown(MouseLockButton))
                 ToggleLock();
         }
