@@ -10,7 +10,7 @@ public class HealthManager : MonoBehaviour
     [SerializeField] private float _maxHealth = 1000f;
     public float CurrentHealth;
     public float HealthPercent => CurrentHealth / _maxHealth;
-    private bool _isDead = false;
+    public bool IsDead { get; private set; } = false;
     public UnityEvent onDeath;
 
     [SerializeField] private GameOverScreen _gameOverScreen;
@@ -35,12 +35,12 @@ public class HealthManager : MonoBehaviour
 
     public void DamagePlayer(float damageAmount)
     {
-        if (_isDead) return;
+        if (IsDead) return;
         CurrentHealth -= damageAmount;
 
         if (CurrentHealth <= 0)
         {
-            _isDead = true;
+            IsDead = true;
             onDeath.Invoke();
         }
     }

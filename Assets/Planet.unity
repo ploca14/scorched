@@ -11817,7 +11817,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 942478368388162804}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 828214061}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a858d7ad88504835abf9c08b5f79fcd, type: 3}
@@ -11829,7 +11829,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 942478368388162804}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 828214061}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b69ad43d84a1a43e88319297d3b50f47, type: 3}
@@ -11841,7 +11841,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 942478368388162804}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 828214061}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e3193cad89ba4446b0d1b377bd20bae, type: 3}
@@ -17805,6 +17805,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827999879}
   m_CullTransparentMesh: 0
+--- !u!1 &828214061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3027383535712220330, guid: 7cddeb784cb136cfd8fec0492b7fc5c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 942478368388162804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &836860433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21385,6 +21391,7 @@ RectTransform:
   - {fileID: 49551921}
   - {fileID: 1166983118}
   - {fileID: 1128147994}
+  - {fileID: 1688378695}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21410,6 +21417,7 @@ MonoBehaviour:
   _thirstMeter: {fileID: 1183054236}
   _oxygenMeter: {fileID: 1033071305}
   _staminaMeter: {fileID: 1254331165}
+  _scoreText: {fileID: 1688378696}
 --- !u!114 &907614871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27116,7 +27124,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1166983117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea11c7637f06005d94dbacd5bb0b291, type: 3}
+  m_Script: {fileID: 11500000, guid: d8fbde6b02620b60eaa44d93757d68e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onInventoryOpen:
@@ -39940,6 +39948,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684874767}
   m_CullTransparentMesh: 0
+--- !u!1 &1688378694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1688378695}
+  - component: {fileID: 1688378697}
+  - component: {fileID: 1688378696}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1688378695
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688378694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 907614869}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -60, y: -30}
+  m_SizeDelta: {x: 250, y: 80}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1688378696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688378694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 38
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Score: 0'
+--- !u!222 &1688378697
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688378694}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1692013270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49847,6 +49935,26 @@ PrefabInstance:
       propertyPath: _gameOverScreen
       value: 
       objectReference: {fileID: 1128147997}
+    - target: {fileID: 570904292, guid: 7cddeb784cb136cfd8fec0492b7fc5c1, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 570904292, guid: 7cddeb784cb136cfd8fec0492b7fc5c1, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 570904292, guid: 7cddeb784cb136cfd8fec0492b7fc5c1, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 828214061}
+    - target: {fileID: 570904292, guid: 7cddeb784cb136cfd8fec0492b7fc5c1, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 570904292, guid: 7cddeb784cb136cfd8fec0492b7fc5c1, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Polyperfect.Crafting.Demo.PlayerCommander, Polyperfect.Crafting.Demo
+      objectReference: {fileID: 0}
     - target: {fileID: 570904292, guid: 7cddeb784cb136cfd8fec0492b7fc5c1, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 

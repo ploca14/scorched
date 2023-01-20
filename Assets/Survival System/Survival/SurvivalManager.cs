@@ -37,6 +37,12 @@ namespace SurvivalSystem
         private float _currentStaminaDelayCounter;
         public float StaminaPercent => _currentStamina / _maxStamina;
 
+        [Header("Score")]
+        [SerializeField] private float _scoreAccumulationRate = 1f;
+        private float _currentScore;
+        public int Score => (int)_currentScore;
+
+
         private InputManager _inputManager;
         private HealthManager _healthManager;
 
@@ -62,6 +68,9 @@ namespace SurvivalSystem
 
         private void Update()
         {
+            if(_healthManager.IsDead) return;
+
+            _currentScore += _scoreAccumulationRate * Time.deltaTime;
             _currentHunger -= _hungerDepletionRate * Time.deltaTime;
             _currentThirst -= _thirstDepletionRate * Time.deltaTime;
             _currentOxygen -= _oxygenDepletionRate * Time.deltaTime;
@@ -70,7 +79,6 @@ namespace SurvivalSystem
             HandleDamage(_currentThirst, _thirstDamageRate);
             HandleDamage(_currentOxygen, _oxygenDamageRate);
             HandleStaminaDepletion();
-
         }
 
         private void HandleDamage(float currentValue, float damageRate)
