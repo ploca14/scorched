@@ -5029,7 +5029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2756512090408258735
 Transform:
   m_ObjectHideFlags: 0
@@ -5558,7 +5558,7 @@ MonoBehaviour:
   CurrentDamageAmount: 5
   DamageAmountRun: 5
   WanderRadius: 25
-  TabNumber: 4
+  TabNumber: 6
   TemperamentTabNumber: 2
   DetectionTagsTabNumber: 1
   AnimationTabNumber: 2

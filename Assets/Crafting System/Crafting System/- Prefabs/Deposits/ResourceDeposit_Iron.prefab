@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 4270302468851246320, guid: 321b5b9d5e1df004bb526d8754c4cdbd,
         type: 3}
       propertyPath: m_Name
-      value: ResourceDeposit_Iron
+      value: ResourceDeposit_Iron (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4270302468851246321, guid: 321b5b9d5e1df004bb526d8754c4cdbd,
         type: 3}
@@ -187,17 +187,17 @@ PrefabInstance:
     - target: {fileID: 4270302468851246323, guid: 321b5b9d5e1df004bb526d8754c4cdbd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -28.974321
       objectReference: {fileID: 0}
     - target: {fileID: 4270302468851246323, guid: 321b5b9d5e1df004bb526d8754c4cdbd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.9954681
       objectReference: {fileID: 0}
     - target: {fileID: 4270302468851246323, guid: 321b5b9d5e1df004bb526d8754c4cdbd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 44.03007
       objectReference: {fileID: 0}
     - target: {fileID: 4270302468851246323, guid: 321b5b9d5e1df004bb526d8754c4cdbd,
         type: 3}
@@ -243,7 +243,7 @@ PrefabInstance:
     - target: {fileID: 7064301836527594965, guid: 321b5b9d5e1df004bb526d8754c4cdbd,
         type: 3}
       propertyPath: InitialObject.count
-      value: 1
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 7743296274024480824, guid: 321b5b9d5e1df004bb526d8754c4cdbd,
         type: 3}

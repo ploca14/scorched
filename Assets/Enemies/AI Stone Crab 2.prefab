@@ -798,13 +798,14 @@ GameObject:
   - component: {fileID: 7649965423308360146}
   - component: {fileID: 7649965423308360145}
   - component: {fileID: 7649965423308360144}
+  - component: {fileID: 1248523364}
   m_Layer: 7
   m_Name: AI Stone Crab 2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &333302402340119701
 Transform:
   m_ObjectHideFlags: 0
@@ -1319,10 +1320,10 @@ MonoBehaviour:
   CurrentDamageAmount: 5
   DamageAmountRun: 5
   WanderRadius: 25
-  TabNumber: 4
+  TabNumber: 6
   TemperamentTabNumber: 2
   DetectionTagsTabNumber: 0
-  AnimationTabNumber: 1
+  AnimationTabNumber: 2
   SoundTabNumber: 1
   MovementTabNumber: 0
   WeaponTypeTabNumber: 0
@@ -1730,7 +1731,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 524237df469d6a04184838b150001790, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1898,6 +1899,18 @@ MonoBehaviour:
   DeathDelay: 0
   BoneObjects: 
   BoneTransformList: []
+--- !u!114 &1248523364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3673663083052701318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac0c32787c04b14a92df4e9e80e3285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4073767980924681501
 GameObject:
   m_ObjectHideFlags: 0
