@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SurvivalUIManager : MonoBehaviour
+namespace SurvivalSystem
 {
-    [SerializeField] private SurvivalManager _survivalManager;
-    [SerializeField] private Image _hungerMeter, _thirstMeter, _oxygenMeter, _staminaMeter;
-
-    private void FixedUpdate()
+    public class SurvivalUIManager : MonoBehaviour
     {
-        _hungerMeter.fillAmount = _survivalManager.HungerPercent;
-        _thirstMeter.fillAmount = _survivalManager.ThirstPercent;
-        _oxygenMeter.fillAmount = _survivalManager.OxygenPercent;
-        _staminaMeter.fillAmount = _survivalManager.StaminaPercent;
+        [SerializeField] private SurvivalManager _survivalManager;
+        [SerializeField] private Image _hungerMeter, _thirstMeter, _oxygenMeter, _staminaMeter;
+
+        private void FixedUpdate()
+        {
+            _hungerMeter.fillAmount = _survivalManager.HungerPercent;
+            _thirstMeter.fillAmount = _survivalManager.ThirstPercent;
+            _oxygenMeter.fillAmount = _survivalManager.OxygenPercent;
+            _staminaMeter.fillAmount = _survivalManager.StaminaPercent;
+        }
     }
 }
+    
