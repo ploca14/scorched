@@ -1,12 +1,9 @@
 ﻿using System;
-using Codice.CM.Client.Differences;
 using Polyperfect.Common;
 using Polyperfect.Crafting.Framework;
-using UnityEditor.Graphs;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-using static UnityEditor.Progress;
 
 namespace Polyperfect.Crafting.Integration.UGUI
 {
