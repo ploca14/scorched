@@ -662,6 +662,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &40601022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1644,6 +1647,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &76108584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3743,6 +3749,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &165766266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4468,6 +4477,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &204119191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5329,6 +5341,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 11400000, guid: f55287994876f4544a9e1cf68bd4fd0b, type: 2}
+  Consumable_Food: {fileID: 11400000, guid: 8106e2d5d297a4f5992e1f1e7bd7ad04, type: 2}
+  Consumable_Oxygen: {fileID: 11400000, guid: 2987cbc5f7182467cb3f6c7fe0d72c9c, type: 2}
 --- !u!114 &246324518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8027,6 +8042,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &401049805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9343,6 +9361,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &430538626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11130,6 +11151,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &557264044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11379,6 +11403,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &561143579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12519,6 +12546,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 11400000, guid: f55287994876f4544a9e1cf68bd4fd0b, type: 2}
+  Consumable_Food: {fileID: 11400000, guid: 8106e2d5d297a4f5992e1f1e7bd7ad04, type: 2}
+  Consumable_Oxygen: {fileID: 11400000, guid: 2987cbc5f7182467cb3f6c7fe0d72c9c, type: 2}
 --- !u!114 &614830680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12739,6 +12769,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 11400000, guid: f55287994876f4544a9e1cf68bd4fd0b, type: 2}
+  Consumable_Food: {fileID: 11400000, guid: 8106e2d5d297a4f5992e1f1e7bd7ad04, type: 2}
+  Consumable_Oxygen: {fileID: 11400000, guid: 2987cbc5f7182467cb3f6c7fe0d72c9c, type: 2}
 --- !u!114 &617573267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12944,6 +12977,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &619839242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14023,6 +14059,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &645365908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14938,6 +14977,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &692362663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17356,6 +17398,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &809181618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18284,6 +18329,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &850576861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20111,6 +20159,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &861557953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20331,6 +20382,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &877416605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22427,6 +22481,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &986219508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24620,6 +24677,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 11400000, guid: f55287994876f4544a9e1cf68bd4fd0b, type: 2}
+  Consumable_Food: {fileID: 11400000, guid: 8106e2d5d297a4f5992e1f1e7bd7ad04, type: 2}
+  Consumable_Oxygen: {fileID: 11400000, guid: 2987cbc5f7182467cb3f6c7fe0d72c9c, type: 2}
 --- !u!114 &1095417792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25300,6 +25360,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1109825907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26366,6 +26429,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1151005328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27793,6 +27859,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1184349355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29201,6 +29270,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1231442809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29626,6 +29698,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1249985565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30786,6 +30861,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 11400000, guid: f55287994876f4544a9e1cf68bd4fd0b, type: 2}
+  Consumable_Food: {fileID: 11400000, guid: 8106e2d5d297a4f5992e1f1e7bd7ad04, type: 2}
+  Consumable_Oxygen: {fileID: 11400000, guid: 2987cbc5f7182467cb3f6c7fe0d72c9c, type: 2}
 --- !u!114 &1283334288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31353,6 +31431,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1301057706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31543,6 +31624,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1308704829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33244,6 +33328,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1403403886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35847,6 +35934,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 11400000, guid: f55287994876f4544a9e1cf68bd4fd0b, type: 2}
+  Consumable_Food: {fileID: 11400000, guid: 8106e2d5d297a4f5992e1f1e7bd7ad04, type: 2}
+  Consumable_Oxygen: {fileID: 11400000, guid: 2987cbc5f7182467cb3f6c7fe0d72c9c, type: 2}
 --- !u!114 &1493975047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36279,6 +36369,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1509442231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37759,6 +37852,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 11400000, guid: f55287994876f4544a9e1cf68bd4fd0b, type: 2}
+  Consumable_Food: {fileID: 11400000, guid: 8106e2d5d297a4f5992e1f1e7bd7ad04, type: 2}
+  Consumable_Oxygen: {fileID: 11400000, guid: 2987cbc5f7182467cb3f6c7fe0d72c9c, type: 2}
 --- !u!114 &1595042646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38866,6 +38962,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1663698980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39220,6 +39319,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1671221309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40552,6 +40654,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1708610572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40772,6 +40877,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1712307685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41461,6 +41569,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 11400000, guid: f55287994876f4544a9e1cf68bd4fd0b, type: 2}
+  Consumable_Food: {fileID: 11400000, guid: 8106e2d5d297a4f5992e1f1e7bd7ad04, type: 2}
+  Consumable_Oxygen: {fileID: 11400000, guid: 2987cbc5f7182467cb3f6c7fe0d72c9c, type: 2}
 --- !u!114 &1735673094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42149,6 +42260,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1751408591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44217,6 +44331,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &1850637299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47452,6 +47569,9 @@ MonoBehaviour:
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
+  Consumable_Water: {fileID: 0}
+  Consumable_Food: {fileID: 0}
+  Consumable_Oxygen: {fileID: 0}
 --- !u!114 &2000794932
 MonoBehaviour:
   m_ObjectHideFlags: 0
